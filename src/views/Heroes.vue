@@ -52,8 +52,6 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
-
 import Form from "@/components/Form";
 import { ref } from "vue";
 
@@ -93,21 +91,9 @@ export default {
     };
   },
 
-  computed: {
-    ...mapGetters("heroModule", {
-      heroes: "heroes",
-      isLoading: "isLoading",
-    }),
-  },
+  computed: {},
 
   methods: {
-    ...mapActions("heroModule", [
-      "getHeroesAction",
-      "removeHeroAction",
-      "addHeroAction",
-      "updateHeroAction",
-    ]),
-
     /* In html template or in code
     onSubmitHero() {
       this.addHeroAction(this.heroForm);
@@ -116,9 +102,7 @@ export default {
     */
   },
 
-  mounted() {
-    this.getHeroesAction();
-  },
+  mounted() {},
 };
 </script>
 
