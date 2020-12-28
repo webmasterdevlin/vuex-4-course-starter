@@ -9,15 +9,12 @@
         <ul class="nav navbar-nav d-flex flex-row bd-highlight">
           <li class="nav-item me-5">
             <router-link to="/heroes" exact class="nav-link"
-              >{{ heroes.length > 0 ? heroes.length : "" }} Heroes</router-link
+              >Heroes</router-link
             >
           </li>
           <li class="nav-item">
             <router-link to="/anti-heroes" exact class="nav-link"
-              >{{
-                antiHeroes.length > 0 ? antiHeroes.length : ""
-              }}
-              Anti-Heroes</router-link
+              >Anti-Heroes</router-link
             >
           </li>
         </ul>
@@ -27,19 +24,8 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-
 export default {
   name: "Navbar",
-
-  computed: {
-    ...mapGetters("heroModule", {
-      heroes: "heroes",
-    }),
-    ...mapGetters("antiHeroModule", {
-      antiHeroes: "antiHeroes",
-    }),
-  },
 };
 </script>
 

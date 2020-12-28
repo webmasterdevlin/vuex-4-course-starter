@@ -6,8 +6,8 @@
       class="card-header"
       style="min-width: 460px"
     >
-      <section class="form-group">
-        <label for="firstName" class="me-4">First Name</label>
+      <section class="form-group mb-2">
+        <label for="firstName">First Name</label>
         <ErrorMessage name="firstName" class="text-danger" />
         <Field
           id="firstName"
@@ -21,8 +21,8 @@
         />
       </section>
 
-      <section class="form-group">
-        <label for="lastName" class="me-4">Last Name</label>
+      <section class="form-group mb-2">
+        <label for="lastName">Last Name</label>
         <ErrorMessage name="lastName" class="text-danger" />
         <Field
           id="lastName"
@@ -35,8 +35,8 @@
           class="form-control"
         />
       </section>
-      <section class="form-group">
-        <label for="house" class="me-4">House</label>
+      <section class="form-group mb-2">
+        <label for="house">House</label>
         <ErrorMessage name="house" class="text-danger" />
         <Field
           id="house"
@@ -49,8 +49,8 @@
           class="form-control"
         />
       </section>
-      <section class="form-group">
-        <label for="knownAs" class="me-4">Known as</label>
+      <section class="form-group mb-2">
+        <label for="knownAs">Known as</label>
         <ErrorMessage name="knownAs" class="text-danger" />
         <Field
           id="knownAs"
